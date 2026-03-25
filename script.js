@@ -12,8 +12,13 @@ class Product {
     toString() {
         return `Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}`;
     }
-}
 
+    static applyDiscount(products, discount) {
+        products.forEach(product => {
+            product.price = product.price * discount;
+        });
+    }
+    }
 
 
 class PerishableProduct extends Product {
@@ -32,14 +37,6 @@ console.log(milk.toString());
 const butter = new PerishableProduct("Butter", 2.00, 5, "2024-12-31");
 console.log(butter.toString());
 const products = [milk, butter];
-
-
-
-static applyDiscount(products, discount) {
-        products.forEach(product => {
-            product.price = product.price * discount;
-        });
-    }
 
 
 
