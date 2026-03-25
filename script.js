@@ -55,3 +55,8 @@ class Store {
 getInventoryValue() {
         return this.inventory.reduce((total, product) => total + product.getTotalValue(), 0);
     }
+
+    findProductByName(name) {
+        const found = this.inventory.find(product => product.name.toLowerCase() === name.toLowerCase());
+        return found || null;
+    }
