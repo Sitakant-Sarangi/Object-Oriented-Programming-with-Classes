@@ -68,16 +68,19 @@ const p3 = new Product("Oranges", 1.80, 50);
 const p4 = new Product("Milk", 1.50, 10);
 const p5 = new Product("Butter", 2.00, 5);
 
-
+const myStore = new Store();
 myStore.addProduct(p1);
 myStore.addProduct(p2);
-
 myStore.addProduct(p3);
 myStore.addProduct(p4);
-
 myStore.addProduct(p5);
 
 // print
 
 console.log("Inventory");
+console.log(`Initial Total Value : $${myStore.getInventoryValue().toFixed(2)}`);
+Product.applyDiscount(myStore.inventory, 0.15);
+console.log(`Total Value after 15% discount: $${myStore.getInventoryValue().toFixed(2)}`);
+
+
 
