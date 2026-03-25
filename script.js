@@ -40,5 +40,15 @@ static applyDiscount(products, discount) {
             product.price = product.price * discount;
         });
     }
-}
 
+
+
+
+class Store {
+    constructor() {
+        this.inventory = [];
+    }
+
+    addProduct(product) {
+        this.inventory.push(product);
+    }}
