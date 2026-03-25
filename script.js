@@ -52,11 +52,14 @@ class Store {
     addProduct(product) {
         this.inventory.push(product);
     }}
-getInventoryValue() {
+getInventoryValue()
+{
         return this.inventory.reduce((total, product) => total + product.getTotalValue(), 0);
     }
 
-    findProductByName(name) {
-        const found = this.inventory.find(product => product.name.toLowerCase() === name.toLowerCase());
+    findProductByName(Name) 
+    {
+        const found = this.inventory.find(product => product.Name.toLowerCase() === Name.toLowerCase());
         return found || null;
     }
+
