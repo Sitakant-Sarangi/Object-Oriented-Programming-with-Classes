@@ -70,3 +70,9 @@ const p2 = new Product("Bananas", 1.20, 50);
 const p3 = new Product("Oranges", 1.80, 50);
 const p4 = new Product("Milk", 1.50, 10);
 const p5 = new Product("Butter", 2.00, 5);
+
+
+myStore.addProduct(p1);
+myStore.addProduct(p2);
+
+
