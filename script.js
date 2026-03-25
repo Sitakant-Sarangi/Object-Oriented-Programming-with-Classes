@@ -82,4 +82,5 @@ myStore.addProduct(p5);
 
 // print
 
+console.log("Inventory");
 
