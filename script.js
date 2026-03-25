@@ -75,4 +75,6 @@ const p5 = new Product("Butter", 2.00, 5);
 myStore.addProduct(p1);
 myStore.addProduct(p2);
 
+myStore.addProduct(p3);
+myStore.addProduct(p4);
 
