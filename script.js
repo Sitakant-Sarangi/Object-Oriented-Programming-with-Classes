@@ -63,3 +63,7 @@ getInventoryValue()
         return found || null;
     }
 
+// referring product as p
+
+const p1 = new Product("Apples", 2.50, 50);
+const p2 = new Product("Bananas", 1.20, 50);
