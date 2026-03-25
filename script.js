@@ -82,5 +82,11 @@ console.log(`Initial Total Value : $${myStore.getInventoryValue().toFixed(2)}`);
 Product.applyDiscount(myStore.inventory, 0.15);
 console.log(`Total Value after 15% discount: $${myStore.getInventoryValue().toFixed(2)}`);
 
+console.log("Finding product by name 'Milk':");
+const searchProduct = myStore.findProductByName("Milk");
+console.log(searchProduct ? searchProduct.toString() : "Product found");
+console.log("Finding product by name 'Bread':");
+const searchProduct2 = myStore.findProductByName("Bread");
+console.log(searchProduct2 ? searchProduct2.toString() : "Product not found");
 
 
